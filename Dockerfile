@@ -1,8 +1,6 @@
-FROM alpine:3.6
+FROM alpine:3.17.2
 
-LABEL MAINTAINER="Sergii Nuzhdin <ipaq.lw@gmail.com@gmail.com>"
-
-ENV KUBE_LATEST_VERSION="v1.18.3"
+ENV KUBE_LATEST_VERSION="v1.23.5"
 
 RUN apk add --update ca-certificates \
     && apk add --update -t deps curl \
